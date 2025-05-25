@@ -1,0 +1,124 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1f1f1f;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #1f1f1f;
+  overflow-x: hidden;
+}
+
+/* Links */
+a {
+  color: #ff69b4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+a:hover,
+a:focus {
+  color: #fff176;
+  outline: none;
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1rem 0;
+  font-weight: 700;
+  color: #fff176;
+  letter-spacing: 1.2px;
+  user-select: none;
+  text-shadow: 0 0 8px #fff176bb;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+  color: #ffe3f0cc;
+  user-select: none;
+  font-weight: 400;
+}
+
+/* Containers */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+button:focus {
+  outline: 2px solid #fff176;
+  outline-offset: 2px;
+}
+
+/* Scrollbar for modern browsers */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff69b4cc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fff176cc;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.4);
+  transition: filter 0.3s ease;
+  user-select: none;
+}
+
+img:hover {
+  filter: brightness(1.05);
+}
