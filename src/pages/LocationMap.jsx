@@ -17,9 +17,9 @@ const center = {
 
 const LocationMap = () => {
   return (
-    <section id="contact" className="location-section ">
+    <section id="locationmap" className="location-section ">
       <h2>Visit Us</h2>
-      <p>123 Shisha Street, London, UK</p>
+      <p className="streetname">123 Shisha Street, London, UK</p>
       <div className="map-container">
         <iframe
           title="Pink Lemonade Lounge Location"

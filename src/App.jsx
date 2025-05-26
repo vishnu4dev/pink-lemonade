@@ -9,7 +9,6 @@ const App = () => (
   <Router>
     <div className="app">
       <header className="floating-header">
-        {/* <div className="logo">Pink Lemonade</div> */}
         <Navbar/>
       </header>
 

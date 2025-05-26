@@ -15,7 +15,8 @@ const Home = () => {
       <section id="menu" className="home-section">
         <Menu />
       </section>
-      <section id="contact" className="home-section">
+      <div className="section-divider" />
+      <section id="locationmap" className="home-section">
         <LocationMap />
       </section>
       <div className="section-divider" />

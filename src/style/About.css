@@ -6,7 +6,9 @@
   gap: 3rem;
   padding: 6vw 4vw;
   color: white;
-  background: linear-gradient(to bottom right, rgba(255, 240, 250, 0.05), rgb(189 25 172 / 47%));
+  /* background: linear-gradient(to bottom right, rgba(255, 240, 250, 0.05), rgb(189 25 172 / 47%)); */
+  background: linear-gradient(to bottom, #ff69b4 0%, #fff176 100%);
+  /* background: linear-gradient(to bottom, #fff176 0%, #ff69b4 100%); Yellow to Pink gradient */
   backdrop-filter: blur(10px);
   border-radius: 2rem;
   margin: 3rem auto;
@@ -42,7 +44,7 @@
 }
 
 .about-text h2 {
-  color: #fff176;
+  color: #493e46;
   font-size: 2.8rem;
   margin-bottom: 1.2rem;
   font-weight: 700;

@@ -23,7 +23,8 @@
     gap: 12px;
     padding: 6vw 4vw;
     color: white;
-    background: linear-gradient(to bottom right, rgba(255, 240, 250, 0.05), rgb(189 25 172 / 47%));
+    /* background: linear-gradient(to bottom right, rgba(255, 240, 250, 0.05), rgb(189 25 172 / 47%)); */
+    background: linear-gradient(to bottom, #ff69b4 0%, #fff176 100%);
     backdrop-filter: blur(10px);
     border-radius: 2rem;
     margin: 3rem auto;
@@ -49,8 +50,15 @@
   
   .location-header p {
     font-size: 1.2rem;
-    color: #ddd;
+    color: #black !important;
     opacity: 0.9;
+  }
+  
+  .streetname{
+    font-size: 1.2rem;
+    color: #0f0f0f !important;
+    opacity: 0.9;
+    margin:0;
   }
   
   .map-container {
