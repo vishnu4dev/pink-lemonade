@@ -1,5 +1,5 @@
 .menu-container {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   color: white;
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.05), rgba(255, 240, 250, 0.1));
   backdrop-filter: blur(10px);
@@ -54,4 +54,11 @@
   color: #ffd6e8cc;
   line-height: 1.4;
   user-select: none;
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+    padding: 5rem 2rem ;
+  }
+
 }

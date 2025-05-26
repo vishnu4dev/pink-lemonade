@@ -1,27 +1,86 @@
 .about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 6vw 4vw;
+  color: white;
+  background: linear-gradient(to bottom right, rgba(255, 240, 250, 0.05), rgb(189 25 172 / 47%));
+  backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  margin: 3rem auto;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+  max-width: 1300px;
+  animation: fadeIn 1.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-family: 'Poppins', 'Helvetica Neue', sans-serif;
+}
+
+.about-image-wrapper {
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  animation: slideUp 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+.about-text h2 {
+  color: #fff176;
+  font-size: 2.8rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.about-text p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #f0f0f0;
+  opacity: 0.95;
+  margin-bottom: 1.2rem;
+}
+
+/* Mobile/Tablet */
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
     padding: 4rem 2rem;
-    max-width: 900px;
-    margin: 3rem auto;
-    color: #fff;
-    background: linear-gradient(135deg, #ff69b4bb, #fff176bb);
-    border-radius: 2rem;
-    box-shadow: 0 8px 30px rgba(255, 105, 180, 0.4);
-    backdrop-filter: blur(12px);
   }
-  
-  .about-container h2 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: #fff176;
-    text-shadow: 0 0 8px #fff176aa;
+
+  .about-image-wrapper,
+  .about-text {
+    max-width: 100%;
+    flex: unset;
   }
-  
-  .about-container p {
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.7;
-    color: #ffe3f0dd;
-    user-select: none;
+
+  .about-text {
+    padding: 2.5rem 1.5rem;
+    text-align: center;
   }
-  
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+}
